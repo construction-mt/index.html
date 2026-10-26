@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cost Calculator</title>
-    <link rel="stylesheet" href="cost.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
@@ -25,5 +25,30 @@
         </div>
         <button class="btn1"><a href="login.html">Login</a></button>
     </nav>
+    <main>
+        <div class="left">
+            <h2>Your Items</h2>
+            <hr>
+        </div>
+        <div class="right">
+            <h2>Cart Quantity</h2>
+            <hr>
+            <button onclick = "document.write(`Cart Quantity:${cartQuantity}`)">Show Quantity</button>
+            <button onclick = "cartQuantity = cartQuantity + 1;
+                document.write(`Cart Quantity:${cartQuantity}`)">Add Quantity</button>
+            <button onclick="
+                cartQuantity = cartQuantity + 2;
+                document.write(`Cart Quantity:${cartQuantity}`)">+2</button>
+            <button onclick="cartQuantity = cartQuantity + 3;
+                document.write(`Cart Quantity:${cartQuantity}`)">+3</button>
+            <button onclick="
+                cartQuantity = 0;
+                document.write(`Cart Quantity:${cartQuantity}`)"
+                >Reset Cart</button>
+        </div>
+    </main>
+    <script>
+        let cartQuantity = 0;
+    </script>
 </body>
 </html>    

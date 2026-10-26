@@ -62,7 +62,7 @@ li a:hover{
 .btn1{
     height: 30px;
     width: 80px;
-    margin: 10px 0px 0px 100px ;
+    margin: 10px 0px 0px 10px ;
     border-radius:20px ;
     font-family: arial black;
     background-color: transparent;
@@ -76,4 +76,26 @@ li a:hover{
 .btn1:hover{
     background-color: rgb(0, 34, 255);
     color: white;
+}
+main{
+    display: flex;
+}
+.left{
+    height: 400px;
+    width: 900px;
+    border: 1px solid black;
+    margin: 20px;
+}
+.right{
+     height: 400px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+}
+button{
+    margin: 10px;
+    font-family: arial black;
 }
